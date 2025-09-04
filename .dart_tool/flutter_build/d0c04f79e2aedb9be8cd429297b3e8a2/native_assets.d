@@ -1,0 +1,1 @@
+ C:\\Users\\ASUS\\OneDrive\\Desktop\\doctor-appointment\\docktor_appointment_app\\.dart_tool\\flutter_build\\d0c04f79e2aedb9be8cd429297b3e8a2\\native_assets.yaml: 

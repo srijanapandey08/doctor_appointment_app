@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "808648894458",
+    "project_id": "doctorappointmentapp-ade49",
+    "storage_bucket": "doctorappointmentapp-ade49.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808648894458:android:7488e8222ffafe5405e643",
+        "android_client_info": {
+          "package_name": "com.example.docktor_appointment_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd1n7-FuyOkBFKf1md2NJNjisNN1gTR0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
