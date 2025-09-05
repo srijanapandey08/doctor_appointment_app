@@ -256,9 +256,26 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                 25.0, 5.0, 20.0, 5.0),
                             child: InkWell(
                               onTap: () {
-                              
-                                  Get.to(() => DoctorDetails());
-                                
+                                Get.to(
+                                  () => DoctorDetails(
+                                      category: doctorsData['Category'] ?? '',
+                                      experience:
+                                          doctorsData['Experience'] ?? '',
+                                      name: doctorsData['Name'] ?? '',
+                                      rating:
+                                          doctorsData['Rating'].toString() ??
+                                              '',
+                                      fee: doctorsData['Fee'] ?? '',
+                                      phone: doctorsData['phone'] ?? '',
+                                      dp: doctorsData['DP'] ?? '',
+                                      sun: doctorsData['Sun'] ?? '',
+                                      mon: doctorsData['Mon'] ?? '',
+                                      tue: doctorsData['Tue'] ?? '',
+                                      wed: doctorsData['Wed'] ?? '',
+                                      thu: doctorsData['Thu'] ?? '',
+                                      fri: doctorsData['Fri'] ?? '',
+                                      sat: doctorsData['Sat'] ?? ''),
+                                );
                               },
                               child: Container(
                                 width: 100.0,
@@ -320,7 +337,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                                             MainAxisAlignment
                                                                 .center,
                                                         children: [
-                                                          Icon(
+                                                          const Icon(
                                                             Icons.star_half,
                                                             color: Color(
                                                                 0xFFFFB300),
@@ -328,17 +345,18 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        6.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0),
+                                                                    6.0,
+                                                                    0.0,
+                                                                    0.0,
+                                                                    0.0),
                                                             child: Text(
                                                               doctorsData[
                                                                       'Rating']
                                                                   .toString(),
-                                                              style: TextStyle(
+                                                              style:
+                                                                  const TextStyle(
                                                                 fontFamily:
                                                                     'Ubuntu',
                                                                 fontSize: 16.0,
@@ -357,8 +375,8 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                                       width: 40,
                                                       height: 40,
                                                       decoration: BoxDecoration(
-                                                        color:
-                                                            Color(0x3FE0E3E7),
+                                                        color: const Color(
+                                                            0x3FE0E3E7),
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(90.0),
@@ -375,12 +393,13 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         20.0, 20.0, 0.0, 0.0),
                                                 child: Text(
                                                   doctorsData['Category'],
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                     fontFamily: 'Ubuntu',
                                                     color: Color(0xA912151C),
                                                     letterSpacing: 0.0,
